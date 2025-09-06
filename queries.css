@@ -1,0 +1,111 @@
+/* Screen > 1536px */
+@media (min-width: 96rem){
+    
+    .container{
+        max-width: 921px;
+    }
+}
+
+/* 1152px < Screen < 1536px */
+@media (min-width: 72rem) and (max-width: 96rem){
+    
+    .container{
+        min-width: 921px;
+    }
+}
+
+/* LG --> SMALL LAPTOPS: 1024px - 1280px */
+@media (max-width: 72rem){
+    /* 1150px / 16px = 71.875 */
+    /* 72 * 16px = 1152px */
+
+    html{
+        /* 9px / 16px = 0.5625 */
+        font-size: 56.25%;
+    }
+
+    .container{
+        width: 70%;
+    }
+}
+
+/* MD --> TABLETS: 768px - 1024px */
+@media (max-width: 56rem){
+    /* 890px / 16px = 55.625 */
+    /* 56 * 16px = 896px */
+
+    html{
+        /* 8px / 16px = 0.5 */
+        font-size: 50%;
+    }
+
+    .attribution{
+        position: fixed;
+        bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+/* SM --> PHONE LANDSCAPE: 576px - 768px */
+@media (max-width: 44rem){
+    /* 695px / 16px = 43.4375 */
+    /* 44 * 16px = 704px */
+
+    html{
+        /* 7px / 16px = 0.4375 */
+        font-size: 43.75%;
+    }
+
+    .attribution{
+        position: relative;
+        bottom: 0;
+        margin-top: 5rem;
+        padding-top: 10rem;
+    }
+}
+
+
+/* XS --> PHONE POTRAIT: < 576px */
+@media (max-width: 36rem){
+    /* 576px / 16px = 36 */
+
+    html{
+        /* 7px / 16px = 0.4375 */
+        font-size: 43.75%;
+    }
+
+    .container{
+        width: 95%;
+        height: 100%;
+        flex: 1;
+
+        margin-top: 10rem;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    header p{
+        width: 80%;
+        text-wrap: pretty;
+    }
+
+    .cards{
+        height: 100%;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 10rem;
+    }
+
+    .col-2{
+        display: contents;
+        flex-direction: unset;
+        gap: unset;
+    }
+    
+    .attribution{
+        display: none;
+    }
+}
