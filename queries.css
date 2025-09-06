@@ -78,9 +78,6 @@
     .container{
         width: 95%;
         height: 100%;
-        flex: 1;
-
-        margin-top: 10rem;
     }
 
     header{
@@ -106,6 +103,7 @@
     }
     
     .attribution{
-        display: none;
+        margin-top: 0;
+        padding-top: 0;
     }
 }
